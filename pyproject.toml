@@ -1,0 +1,19 @@
+[project]
+name = "pymote"
+version = "0.1.0"
+description = "DolphinBar Wiimote GUI - Visualize IR aiming, orientation, and button presses"
+requires-python = ">=3.11"
+dependencies = [
+    "hidapi>=0.15.0",
+    "numpy>=2.4.1",
+    "pyopengl>=3.1.10",
+    "pyopengl-accelerate>=3.1.10",
+    "pyside6>=6.10.1",
+]
+
+[project.scripts]
+pymote = "pymote.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
